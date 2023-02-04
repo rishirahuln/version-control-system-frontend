@@ -42,12 +42,12 @@ const Home = () => {
       </div>
     </div>
   ) : (
-    <div className="text-center my-4">
+    <div className="text-center my-5">
       <h3>Dashboard</h3>
-      <div className="container mt-3">
+      <div className="container mt-4">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6">
-            <div className="card text-center">
+            <div className="card shadow text-center">
               <div className="card-header">
                 <div className="d-flex justify-content-between align-items-center">
                   <h5>Your repositories</h5>
@@ -60,7 +60,7 @@ const Home = () => {
                     {repos.map((repo, index) => {
                       const len = repo.version.length;
                       return (
-                        <div className="card text-center mb-3" key={index}>
+                        <div className="card shadow-sm text-center mb-3" key={index}>
                           <div className="card-header">
                             <h5>{repo.repoName}</h5>
                           </div>

@@ -16,7 +16,7 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary shadow">
         <div className="container-fluid">
           <Link to={"/home"} className="navbar-brand h1">
             <img src="../images/vcs_logo.jpg" alt="Logo" width="30" height="30" className="d-inline-block align-text-top mr-4"/>

@@ -57,13 +57,13 @@ const EditRepo = () => {
       </div>
     </div>
   ) : (
-    <div className="text-center mt-4">
+    <div className="text-center my-5">
       <h3>Commit changes in {repo.repoName} repository</h3>
-      <div className="container mt-4">
+      <div className="container my-4">
         <div className="row justify-content-center">
           <div className="col-lg-6">
             <form onSubmit={formik.handleSubmit}>
-              <div className="row">
+              <div className="row shadow rounded-3 p-3 pt-4">
                 <div className="col-lg-12">
                   <div className="form-group">
                     <input

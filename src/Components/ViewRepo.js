@@ -44,13 +44,13 @@ const ViewRepo = () => {
       </div>
     </div>
   ) : (
-    <div className="text-center mt-4">
+    <div className="text-center my-5">
       <h3>{repo.repoName} repository</h3>
       <div className="container mt-4">
         <div className="row d-flex justify-content-center">
           <div className="col-lg-6">
             {repo.version && (
-              <div className="card text-center">
+              <div className="card shadow text-center">
                 <div className="card-header text-muted">Last updated at: {moment(repo.version[repo.version.length - 1].updatedAt).format("DD-MMM-YYYY hh:mm:ss A")}</div>
                 <div className="card-body">
                   <div className="d-flex justify-content-between align-items-center mb-3">
@@ -61,7 +61,7 @@ const ViewRepo = () => {
                   <div className="d-flex flex-column-reverse">
                     {repo.version.map((val, index) => {
                       return (
-                        <div className="card text-center mb-3" key={index}>
+                        <div className="card shadow-sm text-center mb-3" key={index}>
                           <div className="card-header">
                             <h6>{val.comment}</h6>
                           </div>
