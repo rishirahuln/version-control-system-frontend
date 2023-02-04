@@ -7,6 +7,7 @@ const NavBar = () => {
     try {
       const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/signout`, { withCredentials: true });
       if (response) {
+        document.cookie = "accessToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         navigate("/");
       }
     } catch (error) {
